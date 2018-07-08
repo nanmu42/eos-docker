@@ -3,10 +3,10 @@ sudo: required
 services:
   - docker
 
-if: (tag =~ ^v) AND (branch = master)
+if: (tag IS present) AND (branch = master)
 
 script:
-  - docker build -t nanmu/eos:v1.0.8
+  - docker build -t nanmu/eos:v1.0.8 .
 
 deploy:
   provider: script
