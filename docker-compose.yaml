@@ -3,7 +3,7 @@ version: "3"
 services:
   nodeosd:
     image: nanmu42/eos:v1.0.8
-    command: /opt/eosio/bin/nodeosd.sh --data-dir /opt/eosio/bin/data-dir
+    command: /opt/eosio/bin/nodeosd.sh --data-dir /opt/eosio/bin/data-dir --genesis-json /opt/eosio/bin/data-dir/genesis.json
     hostname: nodeosd
     ports:
       - 8888:8888
