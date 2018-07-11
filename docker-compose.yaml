@@ -2,7 +2,7 @@ version: "3"
 
 services:
   nodeosd:
-    image: nanmu42/eos:v1.0.8
+    image: nanmu42/eos:v1.0.9
     command: /opt/eosio/bin/nodeosd.sh --data-dir /opt/eosio/bin/data-dir --genesis-json /opt/eosio/bin/data-dir/genesis.json
     hostname: nodeosd
     ports:
@@ -16,7 +16,7 @@ services:
       - ./genesis.json:/opt/eosio/bin/data-dir/genesis.json
 
   keosd:
-    image: nanmu42/eos:v1.0.8
+    image: nanmu42/eos:v1.0.9
     command: /opt/eosio/bin/keosd --wallet-dir /opt/eosio/bin/data-dir --http-server-address=127.0.0.1:8900
     hostname: keosd
     links:
