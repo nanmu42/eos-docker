@@ -14,6 +14,7 @@ services:
       - nodeos-data-volume:/opt/eosio/bin/data-dir
       - ./config.ini:/opt/eosio/bin/data-dir/config.ini
       - ./genesis.json:/opt/eosio/bin/data-dir/genesis.json
+    stop_grace_period: 60m
 
   keosd:
     image: nanmu42/eos:v1.0.9
@@ -23,6 +24,7 @@ services:
       - nodeosd
     volumes:
       - keosd-data-volume:/opt/eosio/bin/data-dir
+    stop_grace_period: 60m
 
 volumes:
  nodeos-data-volume:
