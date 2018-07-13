@@ -14,6 +14,7 @@ services:
       - nodeos-data-volume:/opt/eosio/bin/data-dir
       - ./config.ini:/opt/eosio/bin/data-dir/config.ini
       - ./genesis.json:/opt/eosio/bin/data-dir/genesis.json
+    cap_add: IPC_LOCK
     stop_grace_period: 60m
 
   keosd:
