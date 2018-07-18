@@ -1,4 +1,4 @@
-FROM eosio/builder as builder
+FROM nanmu42/eos-builder as builder
 ARG version="v1.1.0"
 ARG symbol="EOS"
 
