@@ -10,6 +10,7 @@ EOS docker image for mainnet production.
 
 | version |                              build                              |      docker pull     |
 |:-------:|:---------------------------------------------------------------:|:--------------------:|
+| v1.1.1  | [#9](https://travis-ci.org/nanmu42/eos-docker/builds/408078022) | `nanmu42/eos:v1.1.1` |
 | v1.1.0  | [#8](https://travis-ci.org/nanmu42/eos-docker/builds/405639870) | `nanmu42/eos:v1.1.0` |
 | v1.0.10  | [#6](https://travis-ci.org/nanmu42/eos-docker/builds/404748634) | `nanmu42/eos:v1.0.10` |
 | v1.0.9  | [#5](https://travis-ci.org/nanmu42/eos-docker/builds/402543083) | `nanmu42/eos:v1.0.9` |
