@@ -1,5 +1,5 @@
 FROM eosio/builder as builder
-ARG version="v1.1.3"
+ARG version="v1.1.4"
 ARG symbol="EOS"
 
 RUN git clone -b $version https://github.com/EOSIO/eos.git --recursive \
