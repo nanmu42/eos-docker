@@ -4,7 +4,7 @@ services:
   - docker
 
 script:
-  - docker build -t nanmu42/eos:v1.2.3 .
+  - docker build -t nanmu42/eos:v1.2.4 .
 
 deploy:
   provider: script
