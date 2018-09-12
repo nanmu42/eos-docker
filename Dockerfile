@@ -4,8 +4,8 @@ ARG symbol="EOS"
 
 RUN git clone -b $version https://github.com/EOSIO/eos.git --recursive \
     && cd eos && echo "$version:$(git rev-parse HEAD)" > /etc/eosio-version \
-    && cmake -DBINARYEN_BIN=/eos/externals/binaryen/bin -DWASM_ROOT=/opt/wasm -DOPENSSL_ROOT_DIR=/usr/bin/openssl -DOPENSSL_LIBRARIES=/usr/lib/ssl -DBUILD_MONGO_DB_PLUGIN=true . \
-    && make \
+    && cmake -j -DCMAKE_BUILD_TYPE=Release -DBINARYEN_BIN=/eos/externals/binaryen/bin -DWASM_ROOT=/opt/wasm -DOPENSSL_ROOT_DIR=/usr/bin/openssl -DOPENSSL_LIBRARIES=/usr/lib/ssl -DBUILD_MONGO_DB_PLUGIN=true . \
+    && make -j \
     && make install
 
 
