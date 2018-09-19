@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-docker push nanmu42/eos:v1.2.5-static
+docker push nanmu42/eos:v1.3.0-static
